@@ -31,7 +31,7 @@
 # CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS
 # IN THE SOFTWARE.
 
-func go-virtualenv () {
+func go-mkvirtualenv () {
     if [ ! -d "$HOME/.go-virtualenvs/$1" ]; then
         mkdir -p $HOME/.go-virtualenvs/$1/{src,pkg,bin}
         go-workon $1
