@@ -7,5 +7,5 @@ setup(
     author_email='me@mihirsingh.com',
     url='https://github.com/citruspi/go-virtualenv',
     license='MIT License',
-    scripts=['scripts/go-virtualenv',]
+    scripts=['scripts/go-virtualenv.sh',]
 )

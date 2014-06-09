@@ -40,6 +40,7 @@ func go-virtualenv () {
 
 func go-workon () {
     if [ -d "$HOME/.go-virtualenvs/$1" ]; then
+        export OLD_GOPATH="$GOPATH"
         export GOPATH="$HOME/.go-virtualenvs/$1"
         export OLD_PS1="$PS1"
         export PS1="($1) $PS1"
@@ -49,5 +50,6 @@ func go-workon () {
 func go-deactivate () {
     export PS1="$OLD_PS1"
     unset OLD_PS1
-    export GOPATH="$HOME/go"
+    export GOPATH="$OLD_GOPATH"
+    unset OLD_GOPATH
 }
