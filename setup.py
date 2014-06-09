@@ -2,7 +2,7 @@ from distutils.core import setup
 
 setup(
     name='go-virtualenv',
-    version='0.0.1',
+    version='0.0.2',
     author='Mihir Singh',
     author_email='me@mihirsingh.com',
     url='https://github.com/citruspi/go-virtualenv',
