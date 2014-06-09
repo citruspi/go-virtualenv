@@ -5,7 +5,7 @@
 
 # Usage:
 #
-# go-virtualenv <name> (Creates a new virtualenv and activates it)
+# go-mkvirtualenv <name> (Creates a new virtualenv and activates it)
 # go-workon <name>     (Activates a virtualenv by exporting the GOPATH variable)
 # go-deactivate        (Deactivates a virtualenv by exporting the default GOPATH variable)
 
